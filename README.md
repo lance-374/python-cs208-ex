@@ -2,14 +2,14 @@
 Contains classes Student, Professor, Course, Class, Major, and Time
 ## Getting Started
 1. Start by creating Courses. Create them using syntax "Course("code", "name", {set of prereqs, optional}, any*) 
-2. \* pass True here if only one course from prereqs set is required, leave blank otherwise
+* \* pass True here if only one course from prereqs set is required, leave blank otherwise
 2. The next step is to create Majors. Create them using syntax Major("name of major", {set of required courses})
 3. Then create Professors using syntax Professor("name", "department", {set of courses optional}, {set of classes optional**}, {set of advisees})
-\*\* A Class is a particular instance of a course such as CS 208 Fall Term 2022 Section 1
+* \*\* A Class is a particular instance of a course such as CS 208 Fall Term 2022 Section 1
 4. Now create Students using syntax Student("name", "grad year", "grad term***", major)
-\*\*\* can be "fall", "winter", "spring", or "summer"
+* \*\*\* can be "fall", "winter", "spring", or "summer"
 5. Finally, create Classes using syntax Class(Course, Term, Year, {set of meet times}, professor, section number. Each item in the set of meet times should be of class Time(Day of the week*\*\*\*, period 1-6****)
-\*\*\*\* Day of the week should be strings "Monday", "Tuesday", "Wednesday", "Thursday", "Friday". If courses meet for two periods together, simply use two Times for that such as {Time("Monday", 2), Time("Monday", 3)}
+* \*\*\*\* Day of the week should be strings "Monday", "Tuesday", "Wednesday", "Thursday", "Friday". If courses meet for two periods together, simply use two Times for that such as {Time("Monday", 2), Time("Monday", 3)}
 
 # Methods:
 ## Student
